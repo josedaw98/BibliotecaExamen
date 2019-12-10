@@ -4,7 +4,7 @@
   
   
 
-  <persistence-unit name="com.jose.bibliotecaExamen.H2" transaction-type="RESOURCE_LOCAL">
+  <persistence-unit name="com.jose.bibliotecaExamen.H2" transaction-type="RESOURCE_LOCAL"><!-- PONEMOS EL NOMBRE DEL PROYECTO -->
     
     <!-- Framework proveedor del servicio de acceso a los datos -->
   	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
@@ -15,7 +15,7 @@
     <properties>
       <!-- Depende del tipo de base de datos que queramos conectar -->
       <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
-      <property name="javax.persistence.jdbc.url" value="jdbc:h2:~/test" />
+      <property name="javax.persistence.jdbc.url" value="jdbc:h2:~/test" /><!-- NOMBRE DE LA RUTA DE CONEXION DE H2 -->
       <property name="javax.persistence.jdbc.user" value="sa" />
       <property name="javax.persistence.jdbc.password" value="" />
       
